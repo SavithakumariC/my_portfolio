@@ -47,7 +47,7 @@
 }
 .nav_item{
     display: grid;
-    grid-template-columns: 1fr repeat(4,auto);
+    grid-template-columns: 1fr repeat(5,auto);
     grid-template-rows: 4rem;
     height: 4rem;
     align-items: center;

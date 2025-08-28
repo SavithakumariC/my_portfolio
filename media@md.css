@@ -52,20 +52,6 @@
     font-size: var(--m-subheading-fs);
 }
 
-/* nav styles */
-.nav_item > div:first-child{
-    display: grid;
-    align-items: center;
-    justify-items: flex-start;
-}
-.nav_item{
-    display: grid;
-    grid-template-columns: 1fr repeat(4,auto);
-    grid-template-rows: 3rem;
-    align-items: center;
-    column-gap: 2rem;
-    padding: 0rem 2rem;
-}
 .menu, .menu_xs{
     display: none;
 }
@@ -88,7 +74,7 @@
 
 .nav_item{
     display: grid;
-    grid-template-columns: 1fr repeat(4,auto);
+    grid-template-columns: 1fr repeat(5,auto);
     height: 3rem;
     align-items: center;
     column-gap: 2rem;
