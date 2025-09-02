@@ -89,6 +89,7 @@
 .intro div:first-child{
     font-size: var(--l-heading-fs);
 }
+
 .left_content div:nth-of-type(2){
     font-size: var(--l-subheading-fs);
 }

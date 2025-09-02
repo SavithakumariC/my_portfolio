@@ -165,6 +165,9 @@
 .left_content span{
     color: var(--highlight);
 }
+.intro:hover{
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
 .left_content button{
   font-size: var(--xs-content-fs);
 }

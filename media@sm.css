@@ -110,6 +110,9 @@
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+.intro:hover{
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
 .intro div:first-child{
     font-size: var(--m-heading-fs);
 }
