@@ -123,6 +123,10 @@
     object-fit: cover;
     box-shadow: 2px 2px 10px var(--text);
 }
+.contact_me a:hover{
+    color: #ffffff;
+    
+}
 
 /*about styles*/
 

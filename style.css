@@ -135,6 +135,8 @@ a:hover {
     display: grid;
     grid-template-areas: "left_content right_content";
     grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 /*intro style */
@@ -156,7 +158,7 @@ a:hover {
     font-size: var(--heading-fs);
 }
 .left_content div:nth-of-type(2){
-    font-size: var(--title-fs);
+    font-size: var(--subtitle-fs);
 }
 .left_content span{
     color: var(--highlight);
@@ -166,7 +168,7 @@ a:hover {
     justify-content: center;
     width: fit-content;
     margin: 2px auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
     box-shadow: 1px 1px 4px var(--text);
 }
 .right_content{
@@ -178,7 +180,7 @@ a:hover {
 }
 .my_profile{
     max-width: 450px;
-    height: 480px;
+    height: 450px;
     margin: auto;
 }
 .profile{
@@ -186,6 +188,11 @@ a:hover {
     height: 100%;
     object-fit: cover;
     box-shadow: 2px 2px 10px var(--text);
+    border-radius: 50%;
+}
+.contact_me a:hover{
+    color: #ffffff;
+    
 }
 
 /*about styles*/
