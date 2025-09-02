@@ -375,6 +375,77 @@
     box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.8);
 }
 
+/*project styles*/
+
+#projects{
+    scroll-margin-top: 2.5rem;
+}
+.project{
+    width: 100vw;
+}
+.project_title{
+    padding:2rem;
+    text-align: center;
+    font-size: var(--m-heading-fs);
+    color: var(--highlight);
+}
+.carosel{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90vw;
+    margin: 0rem auto;
+    min-height: auto;
+    position: relative;
+    border: 1px solid wheat;
+    overflow: hidden;
+}
+.carosel_track{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    width: 100%;
+}
+.carosel_item{
+    width: 90vw;
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+}
+.carosel_item img{
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
+.prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: grid;
+    padding: 0.1rem 0.2rem;
+    font-size: 7px;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 9;
+}
+.nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 7px;
+    transform: translateY(-50%);
+    display: grid;
+    padding: 0.1rem 0.2rem;
+    border-radius: 50%;
+    z-index: 9;
+    border: 1px solid black;
+}
+.inactive{
+  opacity: 0.5;
+  pointer-events: none;
+  box-shadow: none;
+}
+
 /* contact styles */
 
 #contact{

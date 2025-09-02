@@ -303,6 +303,116 @@
     box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.8);
 }
 
+/*project styles*/
+
+#projects{
+    scroll-margin-top: 2vh;
+}
+.project{
+    width: 100vw;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    column-gap: 2rem;
+    box-sizing: border-box;
+    padding: 0rem 4rem;
+    background-color: rgba(0, 51, 102,0.3);
+}
+.large_screen{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.project_title{
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: var(--l-subheading-fs);
+    color: var(--highlight);
+}
+.carosel{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    margin: 3rem auto;
+    min-height: auto;
+    position: relative;
+    border: 1px solid wheat;
+    overflow: hidden;
+    background-color: black;
+}
+.carosel_track{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    width: 100%;
+}
+.carosel_item{
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+}
+.carosel_item img{
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
+/* .small_screen{
+    min-height: 50vh;
+    width: 30vw;
+    margin: 0rem auto;
+    display: grid;
+    align-items: center;
+}
+.carosel_s{
+    display: grid;
+    position: relative;
+    border: 1px solid wheat;
+    overflow: hidden;
+    background-color: black; 
+}
+.carosel_item_s{
+    min-height: 100%;
+    display: grid;
+    align-items: center;
+}
+.carosel_item_s img{
+    width: 100%;
+    height: 100%;
+} */
+.prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: grid;
+    padding: 0.3rem 0.4rem;
+    font-size: 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 9;
+}
+.nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 8px;
+    transform: translateY(-50%);
+    display: grid;
+    padding: 0.3rem 0.4rem;
+    border-radius: 50%;
+    z-index: 9;
+    border: 1px solid black;
+}
+.inactive{
+  opacity: 0.5;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+
 /* contact styles */
 
 #contact{

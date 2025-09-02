@@ -42,3 +42,49 @@ menu_links.forEach((link)=>{
 
 });
 
+const prevBtn = document.querySelector('.prevBtn');
+const nextBtn = document.querySelector('.nextBtn');
+const track = document.querySelector('.carosel_track');
+
+
+let index = 0;
+
+function updateTrack() {
+
+    console.log("Index",index)
+
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    if(index == 0){
+        prevBtn.classList.add('inactive');
+    }
+    else{
+        prevBtn.classList.remove('inactive');
+    }
+
+    if(index > track.children.length - 2){
+        nextBtn.classList.add('inactive');
+    }
+    else{
+        nextBtn.classList.remove('inactive');
+    }
+}
+
+prevBtn.addEventListener('click',function () {
+    if(index > 0){
+        index--;
+        updateTrack();
+    }
+})
+
+nextBtn.addEventListener('click', function () {
+    if(index < track.children.length - 1){
+        index++;
+        updateTrack();
+    }
+})
+
+updateTrack();
+
+
+
